@@ -15,6 +15,7 @@ namespace IdentityMicroservice
             {
                 new IdentityResources.OpenId(),
                 new IdentityResources.Profile(),
+                 new IdentityResources.Email()
                 // You may add other identity resources like address,phone... etc
                 //new IdentityResources.Address()
             };
@@ -73,7 +74,18 @@ namespace IdentityMicroservice
                     AllowedCorsOrigins = { "https://localhost:5003" },
 
                     AllowedScopes = { "openid", "profile", "identity.api" ,"test.api" }
-                }
+                },
+                            new Client
+{
+    ClientId = "mvc_client",
+    ClientSecrets = { new Secret("mvc_secret".Sha256()) },
+    AllowedGrantTypes = GrantTypes.Code,
+    RedirectUris = { "http://localhost:5044/signin-oidc" },  // Địa chỉ callback sau khi đăng nhập thành công
+    PostLogoutRedirectUris = { "http://localhost:5044/signout-callback-oidc" },  // Địa chỉ callback sau khi đăng xuất
+    AllowedScopes = { "openid", "profile", "api1", "email" }, // Thêm "email" vào đây để cho phép lấy thông tin email
+    AllowOfflineAccess = true,
+    RequirePkce = true
+}
             };
         }
     }
