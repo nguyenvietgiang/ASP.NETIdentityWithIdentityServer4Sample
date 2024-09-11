@@ -4,8 +4,11 @@
 
 using IdentityMicroservice.Data;
 using IdentityMicroservice.Models;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication.Google;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -70,15 +73,16 @@ namespace IdentityMicroservice
                 throw new Exception("need to configure key material");
             }
 
-            services.AddAuthentication();
-                //.AddGoogle(options =>
-                //{
-                //    // register your IdentityServer with Google at https://console.developers.google.com
-                //    // enable the Google+ API
-                //    // set the redirect URI to http://localhost:5000/signin-google
-                //    options.ClientId = "copy client ID from Google here";
-                //    options.ClientSecret = "copy client secret from Google here";
-                //});
+            services.AddAuthentication()
+    .AddGoogle(options =>
+    {
+        options.ClientId = Configuration["Google:ClientId"];
+        options.ClientSecret = Configuration["Google:ClientSecret"];
+        options.CallbackPath = new PathString("/signin-google"); // đây là redirect URIs và phải setup sao cho đúng với những gì đã setting trong google cloude console
+        // hiện đang dùng của minhlamshop truy cập webclient 1
+    });
+
+
         }
 
         public void Configure(IApplicationBuilder app)

@@ -3973,3 +3973,339 @@ Configure your application startup by adding app.UseAuthorization() inside the c
 2024-09-09 20:26:26.001 +07:00 [INF] Successful signout callback.
 2024-09-09 20:26:26.001 +07:00 [DBG] No client front-channel iframe urls
 2024-09-09 20:26:26.002 +07:00 [DBG] No client back-channel iframe urls
+2024-09-11 08:54:14.068 +07:00 [INF] Starting IdentityServer4 version 3.1.0.0
+2024-09-11 08:54:14.097 +07:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2024-09-11 08:54:14.101 +07:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2024-09-11 08:54:14.101 +07:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2024-09-11 08:54:14.101 +07:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2024-09-11 08:54:14.102 +07:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2024-09-11 08:54:14.102 +07:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2024-09-11 08:54:14.102 +07:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2024-09-11 08:54:14.691 +07:00 [DBG] Login Url: /Account/Login
+2024-09-11 08:54:14.692 +07:00 [DBG] Login Return Url Parameter: ReturnUrl
+2024-09-11 08:54:14.692 +07:00 [DBG] Logout Url: /Account/Logout
+2024-09-11 08:54:14.692 +07:00 [DBG] ConsentUrl Url: /consent
+2024-09-11 08:54:14.693 +07:00 [DBG] Consent Return Url Parameter: returnUrl
+2024-09-11 08:54:14.693 +07:00 [DBG] Error Url: /home/error
+2024-09-11 08:54:14.693 +07:00 [DBG] Error Id Parameter: errorId
+2024-09-11 08:54:32.199 +07:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-09-11 08:54:51.313 +07:00 [DBG] CORS request made for path: /Account/Login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2024-09-11 08:54:52.715 +07:00 [DBG] Augmenting SignInContext
+2024-09-11 08:54:52.716 +07:00 [DBG] Adding idp claim with value: local
+2024-09-11 08:54:52.717 +07:00 [DBG] Adding auth_time claim with value: 1726019692
+2024-09-11 08:54:52.721 +07:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2024-09-11 08:54:52.733 +07:00 [INF] {"Username":"alice","Provider":null,"ProviderUserId":null,"SubjectId":"c22481c9-bfd9-49dc-a895-e6b20d7a4481","DisplayName":"alice","Endpoint":"UI","ClientId":null,"Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HN6I0IHNM2IN:0000001D","TimeStamp":"2024-09-11T01:54:52.0000000Z","ProcessId":20452,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2024-09-11 08:55:12.401 +07:00 [DBG] CORS request made for path: /Account/Logout from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2024-09-11 08:55:12.417 +07:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2024-09-11 08:55:12.418 +07:00 [INF] AuthenticationScheme: Identity.External signed out.
+2024-09-11 08:55:12.418 +07:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2024-09-11 08:55:12.421 +07:00 [INF] {"SubjectId":"c22481c9-bfd9-49dc-a895-e6b20d7a4481","DisplayName":"Alice Smith","Category":"Authentication","Name":"User Logout Success","EventType":"Success","Id":1002,"Message":null,"ActivityId":"0HN6I0IHNM2IN:00000035","TimeStamp":"2024-09-11T01:55:12.0000000Z","ProcessId":20452,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"UserLogoutSuccessEvent"}
+2024-09-11 09:19:02.969 +07:00 [INF] Starting IdentityServer4 version 3.1.0.0
+2024-09-11 09:19:02.996 +07:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2024-09-11 09:19:03.000 +07:00 [INF] Using the default authentication scheme Cookies for IdentityServer
+2024-09-11 09:19:03.000 +07:00 [DBG] Using Cookies as default ASP.NET Core scheme for authentication
+2024-09-11 09:19:03.000 +07:00 [DBG] Using Cookies as default ASP.NET Core scheme for sign-in
+2024-09-11 09:19:03.001 +07:00 [DBG] Using Cookies as default ASP.NET Core scheme for sign-out
+2024-09-11 09:19:03.001 +07:00 [DBG] Using Google as default ASP.NET Core scheme for challenge
+2024-09-11 09:19:03.001 +07:00 [DBG] Using Google as default ASP.NET Core scheme for forbid
+2024-09-11 09:19:03.716 +07:00 [DBG] Login Url: /Account/Login
+2024-09-11 09:19:03.717 +07:00 [DBG] Login Return Url Parameter: ReturnUrl
+2024-09-11 09:19:03.717 +07:00 [DBG] Logout Url: /Account/Logout
+2024-09-11 09:19:03.718 +07:00 [DBG] ConsentUrl Url: /consent
+2024-09-11 09:19:03.718 +07:00 [DBG] Consent Return Url Parameter: returnUrl
+2024-09-11 09:19:03.718 +07:00 [DBG] Error Url: /home/error
+2024-09-11 09:19:03.718 +07:00 [DBG] Error Id Parameter: errorId
+2024-09-11 09:19:05.727 +07:00 [INF] AuthenticationScheme: Google was challenged.
+2024-09-11 09:19:20.463 +07:00 [INF] AuthenticationScheme: Google was challenged.
+2024-09-11 09:22:30.896 +07:00 [INF] Starting IdentityServer4 version 3.1.0.0
+2024-09-11 09:22:30.923 +07:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2024-09-11 09:22:30.927 +07:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2024-09-11 09:22:30.928 +07:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2024-09-11 09:22:30.928 +07:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2024-09-11 09:22:30.928 +07:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2024-09-11 09:22:30.928 +07:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2024-09-11 09:22:30.929 +07:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2024-09-11 09:22:31.680 +07:00 [DBG] Login Url: /Account/Login
+2024-09-11 09:22:31.682 +07:00 [DBG] Login Return Url Parameter: ReturnUrl
+2024-09-11 09:22:31.682 +07:00 [DBG] Logout Url: /Account/Logout
+2024-09-11 09:22:31.682 +07:00 [DBG] ConsentUrl Url: /consent
+2024-09-11 09:22:31.682 +07:00 [DBG] Consent Return Url Parameter: returnUrl
+2024-09-11 09:22:31.682 +07:00 [DBG] Error Url: /home/error
+2024-09-11 09:22:31.683 +07:00 [DBG] Error Id Parameter: errorId
+2024-09-11 09:22:34.615 +07:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-09-11 09:22:38.154 +07:00 [INF] AuthenticationScheme: Google was challenged.
+2024-09-11 09:23:07.083 +07:00 [INF] Starting IdentityServer4 version 3.1.0.0
+2024-09-11 09:23:07.109 +07:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2024-09-11 09:23:07.112 +07:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2024-09-11 09:23:07.113 +07:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2024-09-11 09:23:07.113 +07:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2024-09-11 09:23:07.113 +07:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2024-09-11 09:23:07.114 +07:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2024-09-11 09:23:07.114 +07:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2024-09-11 09:23:07.584 +07:00 [DBG] Login Url: /Account/Login
+2024-09-11 09:23:07.585 +07:00 [DBG] Login Return Url Parameter: ReturnUrl
+2024-09-11 09:23:07.586 +07:00 [DBG] Logout Url: /Account/Logout
+2024-09-11 09:23:07.586 +07:00 [DBG] ConsentUrl Url: /consent
+2024-09-11 09:23:07.586 +07:00 [DBG] Consent Return Url Parameter: returnUrl
+2024-09-11 09:23:07.586 +07:00 [DBG] Error Url: /home/error
+2024-09-11 09:23:07.586 +07:00 [DBG] Error Id Parameter: errorId
+2024-09-11 09:23:09.263 +07:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-09-11 09:23:10.273 +07:00 [INF] AuthenticationScheme: Google was challenged.
+2024-09-11 09:23:48.249 +07:00 [INF] Starting IdentityServer4 version 3.1.0.0
+2024-09-11 09:23:48.274 +07:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2024-09-11 09:23:48.277 +07:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2024-09-11 09:23:48.278 +07:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2024-09-11 09:23:48.278 +07:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2024-09-11 09:23:48.278 +07:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2024-09-11 09:23:48.278 +07:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2024-09-11 09:23:48.279 +07:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2024-09-11 09:23:48.830 +07:00 [DBG] Login Url: /Account/Login
+2024-09-11 09:23:48.831 +07:00 [DBG] Login Return Url Parameter: ReturnUrl
+2024-09-11 09:23:48.831 +07:00 [DBG] Logout Url: /Account/Logout
+2024-09-11 09:23:48.831 +07:00 [DBG] ConsentUrl Url: /consent
+2024-09-11 09:23:48.832 +07:00 [DBG] Consent Return Url Parameter: returnUrl
+2024-09-11 09:23:48.832 +07:00 [DBG] Error Url: /home/error
+2024-09-11 09:23:48.832 +07:00 [DBG] Error Id Parameter: errorId
+2024-09-11 09:23:50.436 +07:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-09-11 09:23:51.866 +07:00 [INF] AuthenticationScheme: Google was challenged.
+2024-09-11 09:29:46.208 +07:00 [INF] Starting IdentityServer4 version 3.1.0.0
+2024-09-11 09:29:46.233 +07:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2024-09-11 09:29:46.236 +07:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2024-09-11 09:29:46.237 +07:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2024-09-11 09:29:46.237 +07:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2024-09-11 09:29:46.237 +07:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2024-09-11 09:29:46.238 +07:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2024-09-11 09:29:46.238 +07:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2024-09-11 09:29:46.901 +07:00 [DBG] Login Url: /Account/Login
+2024-09-11 09:29:46.902 +07:00 [DBG] Login Return Url Parameter: ReturnUrl
+2024-09-11 09:29:46.903 +07:00 [DBG] Logout Url: /Account/Logout
+2024-09-11 09:29:46.903 +07:00 [DBG] ConsentUrl Url: /consent
+2024-09-11 09:29:46.903 +07:00 [DBG] Consent Return Url Parameter: returnUrl
+2024-09-11 09:29:46.903 +07:00 [DBG] Error Url: /home/error
+2024-09-11 09:29:46.904 +07:00 [DBG] Error Id Parameter: errorId
+2024-09-11 09:29:49.207 +07:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-09-11 09:29:50.511 +07:00 [INF] AuthenticationScheme: Google was challenged.
+2024-09-11 09:31:12.356 +07:00 [INF] Starting IdentityServer4 version 3.1.0.0
+2024-09-11 09:31:12.381 +07:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2024-09-11 09:31:12.385 +07:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2024-09-11 09:31:12.385 +07:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2024-09-11 09:31:12.385 +07:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2024-09-11 09:31:12.386 +07:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2024-09-11 09:31:12.386 +07:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2024-09-11 09:31:12.386 +07:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2024-09-11 09:31:13.430 +07:00 [DBG] Login Url: /Account/Login
+2024-09-11 09:31:13.431 +07:00 [DBG] Login Return Url Parameter: ReturnUrl
+2024-09-11 09:31:13.431 +07:00 [DBG] Logout Url: /Account/Logout
+2024-09-11 09:31:13.432 +07:00 [DBG] ConsentUrl Url: /consent
+2024-09-11 09:31:13.433 +07:00 [DBG] Consent Return Url Parameter: returnUrl
+2024-09-11 09:31:13.433 +07:00 [DBG] Error Url: /home/error
+2024-09-11 09:31:13.433 +07:00 [DBG] Error Id Parameter: errorId
+2024-09-11 09:35:15.737 +07:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-09-11 09:35:18.022 +07:00 [INF] AuthenticationScheme: Google was challenged.
+2024-09-11 09:37:27.626 +07:00 [INF] Starting IdentityServer4 version 3.1.0.0
+2024-09-11 09:37:27.652 +07:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2024-09-11 09:37:27.655 +07:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2024-09-11 09:37:27.656 +07:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2024-09-11 09:37:27.656 +07:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2024-09-11 09:37:27.656 +07:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2024-09-11 09:37:27.657 +07:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2024-09-11 09:37:27.657 +07:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2024-09-11 09:37:28.280 +07:00 [DBG] Login Url: /Account/Login
+2024-09-11 09:37:28.281 +07:00 [DBG] Login Return Url Parameter: ReturnUrl
+2024-09-11 09:37:28.282 +07:00 [DBG] Logout Url: /Account/Logout
+2024-09-11 09:37:28.282 +07:00 [DBG] ConsentUrl Url: /consent
+2024-09-11 09:37:28.282 +07:00 [DBG] Consent Return Url Parameter: returnUrl
+2024-09-11 09:37:28.282 +07:00 [DBG] Error Url: /home/error
+2024-09-11 09:37:28.282 +07:00 [DBG] Error Id Parameter: errorId
+2024-09-11 09:37:31.894 +07:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-09-11 09:37:33.231 +07:00 [INF] AuthenticationScheme: Google was challenged.
+2024-09-11 09:38:59.674 +07:00 [INF] Starting IdentityServer4 version 3.1.0.0
+2024-09-11 09:38:59.700 +07:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2024-09-11 09:38:59.703 +07:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2024-09-11 09:38:59.704 +07:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2024-09-11 09:38:59.704 +07:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2024-09-11 09:38:59.704 +07:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2024-09-11 09:38:59.704 +07:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2024-09-11 09:38:59.705 +07:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2024-09-11 09:39:00.296 +07:00 [DBG] Login Url: /Account/Login
+2024-09-11 09:39:00.297 +07:00 [DBG] Login Return Url Parameter: ReturnUrl
+2024-09-11 09:39:00.297 +07:00 [DBG] Logout Url: /Account/Logout
+2024-09-11 09:39:00.297 +07:00 [DBG] ConsentUrl Url: /consent
+2024-09-11 09:39:00.298 +07:00 [DBG] Consent Return Url Parameter: returnUrl
+2024-09-11 09:39:00.298 +07:00 [DBG] Error Url: /home/error
+2024-09-11 09:39:00.298 +07:00 [DBG] Error Id Parameter: errorId
+2024-09-11 09:39:02.102 +07:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-09-11 09:39:17.765 +07:00 [DBG] CORS request made for path: /Account/Login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2024-09-11 09:39:18.875 +07:00 [DBG] Augmenting SignInContext
+2024-09-11 09:39:18.876 +07:00 [DBG] Adding idp claim with value: local
+2024-09-11 09:39:18.876 +07:00 [DBG] Adding auth_time claim with value: 1726022358
+2024-09-11 09:39:18.880 +07:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2024-09-11 09:39:18.892 +07:00 [INF] {"Username":"alice","Provider":null,"ProviderUserId":null,"SubjectId":"c22481c9-bfd9-49dc-a895-e6b20d7a4481","DisplayName":"alice","Endpoint":"UI","ClientId":null,"Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HN6I1BI319M3:0000000F","TimeStamp":"2024-09-11T02:39:18.0000000Z","ProcessId":22340,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2024-09-11 09:43:02.136 +07:00 [INF] Starting IdentityServer4 version 3.1.0.0
+2024-09-11 09:43:02.161 +07:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2024-09-11 09:43:02.164 +07:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2024-09-11 09:43:02.165 +07:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2024-09-11 09:43:02.165 +07:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2024-09-11 09:43:02.165 +07:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2024-09-11 09:43:02.165 +07:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2024-09-11 09:43:02.166 +07:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2024-09-11 09:43:02.811 +07:00 [INF] Error from RemoteAuthentication: The oauth state was missing or invalid..
+2024-09-11 09:43:02.814 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Authentication.AuthenticationFailureException: An error was encountered while handling the remote login.
+ ---> Microsoft.AspNetCore.Authentication.AuthenticationFailureException: The oauth state was missing or invalid.
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.HandleRequestAsync()
+   at IdentityServer4.Hosting.FederatedSignOut.AuthenticationRequestHandlerWrapper.HandleRequestAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-09-11 09:43:30.861 +07:00 [INF] Starting IdentityServer4 version 3.1.0.0
+2024-09-11 09:43:30.887 +07:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2024-09-11 09:43:30.890 +07:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2024-09-11 09:43:30.890 +07:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2024-09-11 09:43:30.891 +07:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2024-09-11 09:43:30.891 +07:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2024-09-11 09:43:30.891 +07:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2024-09-11 09:43:30.892 +07:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2024-09-11 09:43:31.902 +07:00 [DBG] Login Url: /Account/Login
+2024-09-11 09:43:31.903 +07:00 [DBG] Login Return Url Parameter: ReturnUrl
+2024-09-11 09:43:31.904 +07:00 [DBG] Logout Url: /Account/Logout
+2024-09-11 09:43:31.904 +07:00 [DBG] ConsentUrl Url: /consent
+2024-09-11 09:43:31.904 +07:00 [DBG] Consent Return Url Parameter: returnUrl
+2024-09-11 09:43:31.904 +07:00 [DBG] Error Url: /home/error
+2024-09-11 09:43:31.904 +07:00 [DBG] Error Id Parameter: errorId
+2024-09-11 09:43:39.003 +07:00 [DBG] CORS request made for path: /Account/Logout from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2024-09-11 09:43:39.022 +07:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2024-09-11 09:43:39.024 +07:00 [INF] AuthenticationScheme: Identity.External signed out.
+2024-09-11 09:43:39.024 +07:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2024-09-11 09:43:39.034 +07:00 [INF] {"SubjectId":"c22481c9-bfd9-49dc-a895-e6b20d7a4481","DisplayName":"Alice Smith","Category":"Authentication","Name":"User Logout Success","EventType":"Success","Id":1002,"Message":null,"ActivityId":"0HN6I1E31JN2K:0000001F","TimeStamp":"2024-09-11T02:43:39.0000000Z","ProcessId":2508,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"UserLogoutSuccessEvent"}
+2024-09-11 09:43:42.284 +07:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-09-11 09:43:43.737 +07:00 [INF] AuthenticationScheme: Google was challenged.
+2024-09-11 09:48:57.104 +07:00 [INF] Starting IdentityServer4 version 3.1.0.0
+2024-09-11 09:48:57.129 +07:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2024-09-11 09:48:57.133 +07:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2024-09-11 09:48:57.133 +07:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2024-09-11 09:48:57.133 +07:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2024-09-11 09:48:57.133 +07:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2024-09-11 09:48:57.134 +07:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2024-09-11 09:48:57.134 +07:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2024-09-11 09:48:58.110 +07:00 [DBG] Login Url: /Account/Login
+2024-09-11 09:48:58.111 +07:00 [DBG] Login Return Url Parameter: ReturnUrl
+2024-09-11 09:48:58.111 +07:00 [DBG] Logout Url: /Account/Logout
+2024-09-11 09:48:58.112 +07:00 [DBG] ConsentUrl Url: /consent
+2024-09-11 09:48:58.113 +07:00 [DBG] Consent Return Url Parameter: returnUrl
+2024-09-11 09:48:58.113 +07:00 [DBG] Error Url: /home/error
+2024-09-11 09:48:58.113 +07:00 [DBG] Error Id Parameter: errorId
+2024-09-11 09:49:00.435 +07:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-09-11 09:49:01.600 +07:00 [INF] AuthenticationScheme: Google was challenged.
+2024-09-11 09:54:12.191 +07:00 [INF] Starting IdentityServer4 version 3.1.0.0
+2024-09-11 09:54:12.217 +07:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2024-09-11 09:54:12.220 +07:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2024-09-11 09:54:12.221 +07:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2024-09-11 09:54:12.221 +07:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2024-09-11 09:54:12.221 +07:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2024-09-11 09:54:12.221 +07:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2024-09-11 09:54:12.221 +07:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2024-09-11 09:54:13.188 +07:00 [DBG] Login Url: /Account/Login
+2024-09-11 09:54:13.189 +07:00 [DBG] Login Return Url Parameter: ReturnUrl
+2024-09-11 09:54:13.190 +07:00 [DBG] Logout Url: /Account/Logout
+2024-09-11 09:54:13.190 +07:00 [DBG] ConsentUrl Url: /consent
+2024-09-11 09:54:13.190 +07:00 [DBG] Consent Return Url Parameter: returnUrl
+2024-09-11 09:54:13.191 +07:00 [DBG] Error Url: /home/error
+2024-09-11 09:54:13.191 +07:00 [DBG] Error Id Parameter: errorId
+2024-09-11 09:54:14.862 +07:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-09-11 09:54:16.236 +07:00 [INF] AuthenticationScheme: Google was challenged.
+2024-09-11 09:54:30.597 +07:00 [INF] AuthenticationScheme: Identity.External signed in.
+2024-09-11 09:54:31.458 +07:00 [INF] {"Username":null,"Provider":"Google","ProviderUserId":"108732051180407300147","SubjectId":"5dd773be-2735-4418-a6c0-72bc58f23869","DisplayName":"Giang Nguyễn","Endpoint":"UI","ClientId":null,"Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HN6I1K25LQDN:0000001F","TimeStamp":"2024-09-11T02:54:31.0000000Z","ProcessId":30580,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2024-09-11 09:54:31.467 +07:00 [DBG] Augmenting SignInContext
+2024-09-11 09:54:31.467 +07:00 [DBG] Adding amr claim with value: external
+2024-09-11 09:54:31.469 +07:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2024-09-11 09:54:31.470 +07:00 [INF] AuthenticationScheme: Identity.External signed out.
+2024-09-11 09:55:16.829 +07:00 [DBG] CORS request made for path: /Account/Logout from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2024-09-11 09:55:16.844 +07:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2024-09-11 09:55:16.844 +07:00 [INF] AuthenticationScheme: Identity.External signed out.
+2024-09-11 09:55:16.845 +07:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2024-09-11 09:55:16.846 +07:00 [INF] {"SubjectId":"5dd773be-2735-4418-a6c0-72bc58f23869","DisplayName":"Giang Nguyễn","Category":"Authentication","Name":"User Logout Success","EventType":"Success","Id":1002,"Message":null,"ActivityId":"0HN6I1K25LQDN:0000002D","TimeStamp":"2024-09-11T02:55:16.0000000Z","ProcessId":30580,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"UserLogoutSuccessEvent"}
+2024-09-11 09:55:20.291 +07:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-09-11 09:55:31.174 +07:00 [DBG] CORS request made for path: /Account/Login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2024-09-11 09:55:31.303 +07:00 [DBG] Augmenting SignInContext
+2024-09-11 09:55:31.304 +07:00 [DBG] Adding idp claim with value: local
+2024-09-11 09:55:31.304 +07:00 [DBG] Adding auth_time claim with value: 1726023331
+2024-09-11 09:55:31.304 +07:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2024-09-11 09:55:31.306 +07:00 [INF] {"Username":"alice","Provider":null,"ProviderUserId":null,"SubjectId":"c22481c9-bfd9-49dc-a895-e6b20d7a4481","DisplayName":"alice","Endpoint":"UI","ClientId":null,"Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HN6I1K25LQDN:00000041","TimeStamp":"2024-09-11T02:55:31.0000000Z","ProcessId":30580,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2024-09-11 10:05:41.379 +07:00 [INF] Starting IdentityServer4 version 3.1.0.0
+2024-09-11 10:05:41.405 +07:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2024-09-11 10:05:41.408 +07:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2024-09-11 10:05:41.408 +07:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2024-09-11 10:05:41.409 +07:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2024-09-11 10:05:41.409 +07:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2024-09-11 10:05:41.409 +07:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2024-09-11 10:05:41.409 +07:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2024-09-11 10:05:41.884 +07:00 [DBG] Login Url: /Account/Login
+2024-09-11 10:05:41.885 +07:00 [DBG] Login Return Url Parameter: ReturnUrl
+2024-09-11 10:05:41.886 +07:00 [DBG] Logout Url: /Account/Logout
+2024-09-11 10:05:41.886 +07:00 [DBG] ConsentUrl Url: /consent
+2024-09-11 10:05:41.886 +07:00 [DBG] Consent Return Url Parameter: returnUrl
+2024-09-11 10:05:41.886 +07:00 [DBG] Error Url: /home/error
+2024-09-11 10:05:41.887 +07:00 [DBG] Error Id Parameter: errorId
+2024-09-11 10:05:49.764 +07:00 [DBG] CORS request made for path: /Account/Logout from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2024-09-11 10:05:49.785 +07:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2024-09-11 10:05:49.786 +07:00 [INF] AuthenticationScheme: Identity.External signed out.
+2024-09-11 10:05:49.787 +07:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2024-09-11 10:05:49.797 +07:00 [INF] {"SubjectId":"c22481c9-bfd9-49dc-a895-e6b20d7a4481","DisplayName":"Alice Smith","Category":"Authentication","Name":"User Logout Success","EventType":"Success","Id":1002,"Message":null,"ActivityId":"0HN6I1QFDUBK8:0000001F","TimeStamp":"2024-09-11T03:05:49.0000000Z","ProcessId":12604,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"UserLogoutSuccessEvent"}
+2024-09-11 10:05:52.812 +07:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-09-11 10:05:53.814 +07:00 [INF] AuthenticationScheme: Google was challenged.
+2024-09-11 10:05:54.640 +07:00 [INF] AuthenticationScheme: Identity.External signed in.
+2024-09-11 10:05:55.390 +07:00 [INF] {"Username":null,"Provider":"Google","ProviderUserId":"108732051180407300147","SubjectId":"5dd773be-2735-4418-a6c0-72bc58f23869","DisplayName":"Giang Nguyễn","Endpoint":"UI","ClientId":null,"Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HN6I1QFDUBK8:00000037","TimeStamp":"2024-09-11T03:05:55.0000000Z","ProcessId":12604,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2024-09-11 10:05:55.394 +07:00 [DBG] Augmenting SignInContext
+2024-09-11 10:05:55.395 +07:00 [DBG] Adding amr claim with value: external
+2024-09-11 10:05:55.396 +07:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2024-09-11 10:05:55.396 +07:00 [INF] AuthenticationScheme: Identity.External signed out.
+2024-09-11 10:06:00.399 +07:00 [DBG] CORS request made for path: /Account/Logout from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2024-09-11 10:06:00.401 +07:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2024-09-11 10:06:00.401 +07:00 [INF] AuthenticationScheme: Identity.External signed out.
+2024-09-11 10:06:00.402 +07:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2024-09-11 10:06:00.403 +07:00 [INF] {"SubjectId":"5dd773be-2735-4418-a6c0-72bc58f23869","DisplayName":"Giang Nguyễn","Category":"Authentication","Name":"User Logout Success","EventType":"Success","Id":1002,"Message":null,"ActivityId":"0HN6I1QFDUBK8:00000045","TimeStamp":"2024-09-11T03:06:00.0000000Z","ProcessId":12604,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"UserLogoutSuccessEvent"}
+2024-09-11 10:06:03.187 +07:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-09-11 10:06:04.089 +07:00 [INF] AuthenticationScheme: Google was challenged.
+2024-09-11 10:06:04.445 +07:00 [INF] AuthenticationScheme: Identity.External signed in.
+2024-09-11 10:06:04.518 +07:00 [INF] {"Username":null,"Provider":"Google","ProviderUserId":"108732051180407300147","SubjectId":"5dd773be-2735-4418-a6c0-72bc58f23869","DisplayName":"Giang Nguyễn","Endpoint":"UI","ClientId":null,"Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HN6I1QFDUBK8:0000005D","TimeStamp":"2024-09-11T03:06:04.0000000Z","ProcessId":12604,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2024-09-11 10:06:04.520 +07:00 [DBG] Augmenting SignInContext
+2024-09-11 10:06:04.520 +07:00 [DBG] Adding amr claim with value: external
+2024-09-11 10:06:04.521 +07:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2024-09-11 10:06:04.521 +07:00 [INF] AuthenticationScheme: Identity.External signed out.
+2024-09-11 10:06:07.287 +07:00 [DBG] CORS request made for path: /Account/Logout from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2024-09-11 10:06:07.288 +07:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2024-09-11 10:06:07.288 +07:00 [INF] AuthenticationScheme: Identity.External signed out.
+2024-09-11 10:06:07.289 +07:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2024-09-11 10:06:07.290 +07:00 [INF] {"SubjectId":"5dd773be-2735-4418-a6c0-72bc58f23869","DisplayName":"Giang Nguyễn","Category":"Authentication","Name":"User Logout Success","EventType":"Success","Id":1002,"Message":null,"ActivityId":"0HN6I1QFDUBK8:0000006B","TimeStamp":"2024-09-11T03:06:07.0000000Z","ProcessId":12604,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"UserLogoutSuccessEvent"}
+2024-09-11 10:20:31.597 +07:00 [INF] Starting IdentityServer4 version 3.1.0.0
+2024-09-11 10:20:31.622 +07:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2024-09-11 10:20:31.625 +07:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2024-09-11 10:20:31.626 +07:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2024-09-11 10:20:31.626 +07:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2024-09-11 10:20:31.626 +07:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2024-09-11 10:20:31.626 +07:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2024-09-11 10:20:31.627 +07:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2024-09-11 10:20:32.091 +07:00 [DBG] Login Url: /Account/Login
+2024-09-11 10:20:32.092 +07:00 [DBG] Login Return Url Parameter: ReturnUrl
+2024-09-11 10:20:32.092 +07:00 [DBG] Logout Url: /Account/Logout
+2024-09-11 10:20:32.092 +07:00 [DBG] ConsentUrl Url: /consent
+2024-09-11 10:20:32.093 +07:00 [DBG] Consent Return Url Parameter: returnUrl
+2024-09-11 10:20:32.093 +07:00 [DBG] Error Url: /home/error
+2024-09-11 10:20:32.093 +07:00 [DBG] Error Id Parameter: errorId
+2024-09-11 10:20:34.498 +07:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-09-11 10:20:35.728 +07:00 [INF] AuthenticationScheme: Google was challenged.
+2024-09-11 10:20:36.584 +07:00 [INF] AuthenticationScheme: Identity.External signed in.
+2024-09-11 10:20:37.301 +07:00 [INF] {"Username":null,"Provider":"Google","ProviderUserId":"108732051180407300147","SubjectId":"5dd773be-2735-4418-a6c0-72bc58f23869","DisplayName":"Giang Nguyễn","Endpoint":"UI","ClientId":null,"Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HN6I22ONL3H3:0000001F","TimeStamp":"2024-09-11T03:20:37.0000000Z","ProcessId":4348,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2024-09-11 10:20:37.309 +07:00 [DBG] Augmenting SignInContext
+2024-09-11 10:20:37.309 +07:00 [DBG] Adding amr claim with value: external
+2024-09-11 10:20:37.311 +07:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2024-09-11 10:20:37.313 +07:00 [INF] AuthenticationScheme: Identity.External signed out.
+2024-09-11 10:20:46.217 +07:00 [DBG] CORS request made for path: /Account/Logout from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2024-09-11 10:20:46.232 +07:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2024-09-11 10:20:46.233 +07:00 [INF] AuthenticationScheme: Identity.External signed out.
+2024-09-11 10:20:46.233 +07:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2024-09-11 10:20:46.234 +07:00 [INF] {"SubjectId":"5dd773be-2735-4418-a6c0-72bc58f23869","DisplayName":"Giang Nguyễn","Category":"Authentication","Name":"User Logout Success","EventType":"Success","Id":1002,"Message":null,"ActivityId":"0HN6I22ONL3H3:0000002D","TimeStamp":"2024-09-11T03:20:46.0000000Z","ProcessId":4348,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"UserLogoutSuccessEvent"}
