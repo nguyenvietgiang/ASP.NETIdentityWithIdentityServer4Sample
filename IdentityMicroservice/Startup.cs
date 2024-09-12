@@ -4,8 +4,6 @@
 
 using IdentityMicroservice.Data;
 using IdentityMicroservice.Models;
-using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.AspNetCore.Authentication.Google;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -33,7 +31,7 @@ namespace IdentityMicroservice
             //TODO: change UseSqlite to UseSqlServer
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
-                        
+
             // Block 1: Add ASP.NET Identity
             services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>()
@@ -80,8 +78,14 @@ namespace IdentityMicroservice
         options.ClientSecret = Configuration["Google:ClientSecret"];
         options.CallbackPath = new PathString("/signin-google"); // đây là redirect URIs và phải setup sao cho đúng với những gì đã setting trong google cloude console
         // hiện đang dùng của minhlamshop truy cập webclient 1
-    });
-
+    })
+            .AddFacebook(options =>
+             {
+                 options.AppId = Configuration["Facebook:AppId"];
+                 options.AppSecret = Configuration["Facebook:AppSecret"];
+                 options.CallbackPath = new PathString("/signin-facebook");
+                 // để hoạt động, ứng dụng phải được go live và phải đúng redirect URIs ở phần cài đặt đăng nhập bằng facebook
+             });
 
         }
 
